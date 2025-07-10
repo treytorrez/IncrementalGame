@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwlx1pqwr67uy"]
+
+[ext_resource type="Script" uid="uid://ddq7vqvxo5axu" path="res://Scripts/auto_clickers.gd" id="1_11jjk"]
+[ext_resource type="Script" uid="uid://bg7my11rkby3i" path="res://Scripts/upgrades.gd" id="1_fjsba"]
+
+[node name="TabContainer" type="TabContainer"]
+offset_right = 575.0
+offset_bottom = 648.0
+current_tab = 1
+
+[node name="Upgrades" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 2
+script = ExtResource("1_fjsba")
+metadata/_tab_index = 0
+
+[node name="AutoClickers" type="VBoxContainer" parent="."]
+layout_mode = 2
+script = ExtResource("1_11jjk")
+metadata/_tab_index = 1

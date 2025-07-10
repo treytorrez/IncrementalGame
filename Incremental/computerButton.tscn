@@ -1,0 +1,78 @@
+[gd_scene load_steps=11 format=3 uid="uid://8sfww2rxs0dr"]
+
+[ext_resource type="Texture2D" uid="uid://dvms8tmtl66mp" path="res://Assets/computer.png" id="1_hhyuc"]
+[ext_resource type="Script" uid="uid://de5rg6oh02pr3" path="res://Scripts/computer_button.gd" id="1_nld6o"]
+[ext_resource type="Script" uid="uid://b2kd3pgovm5cg" path="res://Scripts/computerAnim.gd" id="3_qnetx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nld6o"]
+atlas = ExtResource("1_hhyuc")
+region = Rect2(0, 0, 132, 114)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qnetx"]
+atlas = ExtResource("1_hhyuc")
+region = Rect2(132, 0, 132, 114)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dr0t3"]
+atlas = ExtResource("1_hhyuc")
+region = Rect2(264, 0, 132, 114)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_td8md"]
+atlas = ExtResource("1_hhyuc")
+region = Rect2(396, 0, 132, 114)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s0fgl"]
+atlas = ExtResource("1_hhyuc")
+region = Rect2(0, 114, 132, 114)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pb57g"]
+atlas = ExtResource("1_hhyuc")
+region = Rect2(132, 114, 132, 114)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ei510"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nld6o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qnetx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dr0t3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_td8md")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s0fgl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pb57g")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Button"]
+anchors_preset = -1
+anchor_left = 0.854
+anchor_top = 0.305
+anchor_right = 0.854
+anchor_bottom = 0.305
+offset_left = -270.808
+offset_top = -201.64
+offset_right = 164.192
+offset_bottom = 174.36
+script = ExtResource("1_nld6o")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(234.507, 189)
+scale = Vector2(2.99232, 3.22807)
+sprite_frames = SubResource("SpriteFrames_ei510")
+frame = 2
+frame_progress = 0.812957
+script = ExtResource("3_qnetx")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
+[connection signal="pressed" from="." to="AnimatedSprite2D" method="_on_node_2d_pressed"]

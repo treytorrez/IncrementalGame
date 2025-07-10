@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dbvowodcpqf18"]
+
+[ext_resource type="PackedScene" uid="uid://8sfww2rxs0dr" path="res://computerButton.tscn" id="1_pq8q7"]
+[ext_resource type="PackedScene" uid="uid://bj1g5dh10dlph" path="res://scoreDisplay.tscn" id="2_pyidc"]
+[ext_resource type="PackedScene" uid="uid://bwlx1pqwr67uy" path="res://upgrade_container.tscn" id="3_vvh5c"]
+
+[node name="Root" type="Node2D"]
+
+[node name="Node2D" parent="." instance=ExtResource("1_pq8q7")]
+offset_left = 677.0
+offset_top = 29.0
+offset_right = 1128.0
+offset_bottom = 413.0
+
+[node name="Score" parent="." instance=ExtResource("2_pyidc")]
+offset_left = 678.0
+offset_top = 424.0
+offset_right = 1136.0
+offset_bottom = 525.0
+
+[node name="TabContainer" parent="." instance=ExtResource("3_vvh5c")]
+offset_right = 678.0

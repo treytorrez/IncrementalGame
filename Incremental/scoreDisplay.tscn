@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://bj1g5dh10dlph"]
+
+[ext_resource type="FontFile" uid="uid://di30bo6o2aybr" path="res://Assets/minisystem/Minisystem.otf" id="1_bohji"]
+[ext_resource type="Script" uid="uid://cjbcsmmh26u76" path="res://Scripts/rich_text_label.gd" id="1_g67lr"]
+[ext_resource type="Script" uid="uid://dlhdnmc8h34jf" path="res://Scripts/scoreDisplay.gd" id="2_bohji"]
+
+[node name="Score" type="Label"]
+offset_right = 151.0
+offset_bottom = 161.0
+theme_override_fonts/font = ExtResource("1_bohji")
+theme_override_font_sizes/font_size = 40
+text = "Score:"
+script = ExtResource("1_g67lr")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_top = 43.0
+offset_right = 459.0
+offset_bottom = 92.0
+theme_override_fonts/font = ExtResource("1_bohji")
+theme_override_font_sizes/font_size = 40
+text = "[SCORE GOES HERE]"
+script = ExtResource("2_bohji")

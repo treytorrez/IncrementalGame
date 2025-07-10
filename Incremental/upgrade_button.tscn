@@ -1,0 +1,48 @@
+[gd_scene load_steps=6 format=3 uid="uid://dpwousluppkuv"]
+
+[ext_resource type="Texture2D" uid="uid://b1mq3c71ei143" path="res://Assets/blankKey.png" id="1_lcpy1"]
+[ext_resource type="Texture2D" uid="uid://bwf8fio5cllr2" path="res://Assets/blankKey_pressed.png" id="2_21fsu"]
+[ext_resource type="Script" uid="uid://cti8hvsem8xej" path="res://upgrade_button.gd" id="3_21fsu"]
+[ext_resource type="FontFile" uid="uid://di30bo6o2aybr" path="res://Assets/minisystem/Minisystem.otf" id="3_m2cuk"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_21fsu"]
+font_size = 40
+
+[node name="TextureButton" type="TextureButton"]
+texture_filter = 1
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("1_lcpy1")
+texture_pressed = ExtResource("2_21fsu")
+script = ExtResource("3_21fsu")
+
+[node name="UpgradeLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 136.0
+offset_right = 548.0
+offset_bottom = 147.0
+theme_override_fonts/font = ExtResource("3_m2cuk")
+theme_override_font_sizes/font_size = 45
+text = "<UPGRADE HERE>"
+label_settings = SubResource("LabelSettings_21fsu")
+autowrap_mode = 3
+
+[node name="keyText" type="Label" parent="."]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 16.0
+offset_right = 112.0
+offset_bottom = 131.0
+
+[node name="costLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 133.0
+offset_top = 118.0
+offset_right = 545.0
+offset_bottom = 147.0
+theme_override_fonts/font = ExtResource("3_m2cuk")
+theme_override_font_sizes/font_size = 20
+text = "<UPGRADE HERE>"
+text_overrun_behavior = 3
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
