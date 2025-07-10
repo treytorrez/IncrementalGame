@@ -1,31 +1,27 @@
 # Overview
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
+This repository contains a small clicker style game created with the Godot Engine.  The project started as a way to become more familiar with Godot’s user interface system and basic scripting.  It is meant to be a simple showcase of incrementing values, purchasing upgrades and introducing passive income.
 
-{Provide a description the game that you wrote. Describe how to play your game.}
+The player presses the computer button on screen to earn score.  That score can then be spent on upgrades that increase the amount gained per click or on autoclickers that generate points every second.  Upgrades scale in price the more they are bought which encourages continued interaction.
 
-{Describe your purpose for writing this software.}
+The game was written to practice GDScript and explore how Godot scenes can be composed into a user interface.  The code base is small but provides a foundation that can be expanded with additional features such as animations or sound.
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the game being played and a walkthrough of the code.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+Demo video not yet available.
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
-
-{Describe the programming language that you used and any libraries.}
+The project was created with **Godot 4** using the built in script editor.  All gameplay logic is written in **GDScript**.  Assets were assembled with simple PNG images and an open‑source font.
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+Helpful references while building this project:
+* [Godot Documentation](https://docs.godotengine.org)
+* [GDScript Basics](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_basics.html)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
-* Item 3
+Planned improvements include:
+* Add sound effects and background music.
+* Expand the upgrade system with more items and better balancing.
+* Create a simple save/load system to track progress between sessions.
 
