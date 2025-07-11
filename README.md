@@ -6,7 +6,7 @@ The player presses the computer button on screen to earn score.  That score can 
 
 The game was written to practice GDScript and explore how Godot scenes can be composed into a user interface.  The code base is small but provides a foundation that can be expanded with additional features such as animations or sound.
 
-Demo video not yet available.
+https://www.youtube.com/watch?v=9Pebjni7nns
 
 # Development Environment
 
